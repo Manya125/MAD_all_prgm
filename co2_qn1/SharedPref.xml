@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shared">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:background="#72AC73"
+        android:gravity="center"
+        android:text="REGISTRATION FORM"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/first"
+        android:layout_width="392dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="#E19F9F"
+        android:gravity="center"
+        android:hint="UserName" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="392dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:background="#E19F9F"
+        android:hint="Password"/>
+
+
+
+</LinearLayout>
