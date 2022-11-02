@@ -31,6 +31,25 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,SecondActivity.class);
                 intent.putExtra("image",logs[i]);
                 startActivity(intent);
+                
+                //Alert Box on selection
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setMessage("Do you want to exit?");
+                builder.setTitle("Alert!");
+                builder.setCancelable(false);
+                builder.setPositiveButton("Yes", (DialogInterface.OnClickListener) (dialog, which) -> {
+                    // When the user click yes button then app will close
+                    finish();
+                });
+
+                builder.setNegativeButton("Yes", (DialogInterface.OnClickListener) (dialog, which) -> {
+                    // When the user click yes button then app will close
+                    dialog.cancel();
+                });
+
+                AlertDialog alertDialog = builder.create();
+                // Show the Alert Dialog box
+                alertDialog.show();
             }
         });
 
